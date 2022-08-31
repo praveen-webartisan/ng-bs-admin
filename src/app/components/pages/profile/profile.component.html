@@ -1,0 +1,183 @@
+<div class="row">
+	<div class="col-sm-6">
+		<h3 class="d-inline">{{ pageTitle }}</h3>
+	</div>
+	<div class="col-sm-6">
+		<nav class="float-end" aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a routerLink="/dashboard">Dashboard</a></li>
+				<li class="breadcrumb-item active">Profile</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<div class="row mt-3">
+	<div class="col-lg-3 col-md-4 col-sm-12">
+		<div class="list-group border-0">
+			<a class="list-group-item list-group-item-action active" routerLink="/profile"><i class="icofont-user-suited"></i> Basic Details</a>
+			<a class="list-group-item list-group-item-action" routerLink="/profile/contact-details"><i class="icofont-mail"></i> Contact Details</a>
+			<a class="list-group-item list-group-item-action" routerLink="/profile/account"><i class="icofont-settings"></i> Account</a>
+		</div>
+	</div>
+	<div class="col-lg-9 col-md-8 col-sm-12">
+		<h4>Basic Details</h4>
+		<hr>
+
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="form-group">
+					<label class="form-label" for="firstName">First Name</label>
+					<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name...">
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="form-group">
+					<label class="form-label" for="lastName">Last Name</label>
+					<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Last Name...">
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<div class="col-12">
+				<div class="form-group">
+					<label class="form-label" for="bio">Bio</label>
+					<textarea rows="4" class="form-control" id="bio" name="bio" placeholder="Enter Bio..."></textarea>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="form-group">
+					<label class="form-label" for="dob">Date of Birth</label>
+					<input type="text" class="form-control" id="dob" name="dob" placeholder="Enter Date of Birth...">
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="form-group">
+					<label class="form-label" for="website">Website URL</label>
+					<input type="text" class="form-control" id="website" name="website" placeholder="Enter Website URL...">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row mt-3">
+	<div class="col-12">
+
+		<div class="card">
+			<div class="card-header">Basic Details</div>
+			<div class="card-body">
+
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="firstName">First Name</label>
+							<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name...">
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="lastName">Last Name</label>
+							<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Last Name...">
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="dob">Date of Birth</label>
+							<input type="text" class="form-control" id="dob" name="dob" placeholder="Enter Date of Birth...">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="row mt-3">
+	<div class="col-12">
+
+		<div class="card">
+			<div class="card-header">Contact Details</div>
+			<div class="card-body">
+
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="phoneNo">Phone Number</label>
+							<div class="input-group">
+								<input type="text" class="form-control" id="phoneNo" name="phoneNo" placeholder="Enter Phone Number...">
+								<i class="input-group-text icofont-exclamation-tringle text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Not Verified"></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="email">Email Address</label>
+							<div class="input-group">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Address...">
+								<i class="input-group-text icofont-exclamation-tringle text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Not Verified"></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="address1">Address Line 1</label>
+							<input type="text" class="form-control" id="address1" name="address1" placeholder="Enter Address Line 1...">
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="address2">Address Line 2</label>
+							<input type="text" class="form-control" id="address2" name="address2" placeholder="Enter Address Line 2...">
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-3">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="address3">Address Line 3</label>
+							<input type="text" class="form-control" id="address3" name="address3" placeholder="Enter Address Line 3...">
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="city">City</label>
+							<input type="text" class="form-control" id="city" name="city" placeholder="Enter City...">
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="pincode">PIN Code</label>
+							<input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter PIN Code...">
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="form-group">
+							<label class="form-label" for="state">State</label>
+							<select class="form-select" id="state" name="state"></select>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>

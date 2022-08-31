@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="appNavbar">
+	<div class="container-fluid">
+
+		<a class="navbar-brand" routerLink="">
+			<img [src]="appLogo" alt="" height="20">
+			{{ appName }}
+		</a>
+
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="icofont-navigation-menu"></i>
+		</button>
+
+		<div class="collapse navbar-collapse" id="mainNavbarCollapse">
+			<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+				<li class="nav-item">
+					<a class="nav-link" routerLink="/dashboard" routerLinkActive="active">
+						<i class="icofont-home"></i> Dashboard
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="icofont-ui-user"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarProfileDropdown">
+						<li>
+							<a class="dropdown-item" routerLink="/profile" routerLinkActive="active"><i class="icofont-user-suited"></i> Profile</a>
+						</li>
+						<li>
+							<a class="dropdown-item" routerLink="/settings" routerLinkActive="active"><i class="icofont-settings"></i> Settings</a>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#logoutModal"><i class="icofont-logout"></i> Logout</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</nav>
+
+<div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" id="logoutModal">
+	<div class="modal-dialog modal-dialog-centered modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">{{ appName }}</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div><i class="icofont-exclamation-tringle text-warning"></i> Are you sure you want to Logout?</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+				<button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="logoutUser()">Yes</button>
+			</div>
+		</div>
+	</div>
+</div>

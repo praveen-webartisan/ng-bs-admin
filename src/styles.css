@@ -1,0 +1,55 @@
+.hide {
+	display: none !important;
+}
+
+.navbar>.container-fluid {
+	/*justify-content: unset;*/
+}
+
+.content-wrapper {
+	margin-top: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-top: 0.5em;
+}
+
+.page-title {
+	margin-bottom: 0.5em;
+}
+
+.page-overlay {
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.95);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.height-full {
+	height: 80vh;
+}
+
+.width-full {
+	width: 100%;
+}
+
+.d-flex.align-middle, .d-inline-flex.align-middle {
+	align-items: center;
+}
+
+.d-flex.align-center, .d-inline-flex.align-center {
+	justify-content: center;
+}
+
+.top-appNavbar {
+	top: 2em;
+}
+
+.list-group.border-0 > .list-group-item {
+	border: 0 !important;
+}

@@ -1,0 +1,13 @@
+<div *ngIf="isPageLoading" class="page-overlay">
+	<div class="spinner-grow text-primary" role="status">
+		<span class="visually-hidden">Loading...</span>
+	</div>
+</div>
+
+<app-top-navbar></app-top-navbar>
+
+<div class="content-wrapper">
+	<div class="container-fluid">
+		<router-outlet></router-outlet>
+	</div>
+</div>
